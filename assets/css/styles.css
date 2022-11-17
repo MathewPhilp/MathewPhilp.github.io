@@ -325,13 +325,14 @@ body.light-theme
   position: relative;
   row-gap: 4.5rem;
   padding-top: 2rem;
+  overflow: hidden;
 
 }
 
 .home__data
 {
   text-align: center;
-  /* padding-top: 10rem; */
+  padding-top: 10rem;
 }
 
 .home__greeting,
@@ -363,6 +364,14 @@ body.light-theme
 {
   width: 160px;
 }
+.home__mission
+{
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  text-align: center;
+  margin-top: 5rem;
+}
 
 .home__handle
 {
@@ -374,7 +383,6 @@ body.light-theme
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  overflow: hidden;
 }
 
 .home__buttons
@@ -456,6 +464,7 @@ body.light-theme
   transform: rotate(-90deg);
 }
 
+
 /*=============== BUTTONS ===============*/
 
 .button
@@ -484,10 +493,10 @@ body.light-theme
 
 
 /*=============== ABOUT ===============*/
-/* .about
+.about
 {
-  margin-top:  19.5rem;
-} */
+  margin-top:  11rem;
+}
 .about__container
 {
   row-gap: 2.5rem;
@@ -1057,6 +1066,11 @@ body.light-theme
   {
     padding: 1rem 1.5rem;
   }
+  .home__data
+  {
+  text-align: center;
+  padding-top: 2rem;
+  }
   .home__buttons
   {
     flex-direction: column;
@@ -1069,6 +1083,14 @@ body.light-theme
   .home__img
   {
     width: 130px;
+  }
+  .home__social
+  {
+  bottom: 3rem;
+  }
+  .home__scroll
+  {
+  bottom: 2rem;
   }
   .about__info
   {
