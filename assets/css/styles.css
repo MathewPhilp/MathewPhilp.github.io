@@ -331,6 +331,7 @@ body.light-theme
 .home__data
 {
   text-align: center;
+  /* padding-top: 10rem; */
 }
 
 .home__greeting,
@@ -434,10 +435,19 @@ body.light-theme
   row-gap: 2.25rem;
   justify-items: center;
 }
+.home__scroll::after
+{
+  content: '';
+  width: 32px;
+  height: 2px;
+  background-color: hsl(var(--second-hue), 48%, 8%);
+  transform: rotate(90deg) translate(16px, 0px);
+}
 
 .home__scroll-icon
 {
   font-size: 1.25rem;
+  color: var(--first-color);
 }
 
 .home__scroll-name
@@ -474,6 +484,10 @@ body.light-theme
 
 
 /*=============== ABOUT ===============*/
+/* .about
+{
+  margin-top:  19.5rem;
+} */
 .about__container
 {
   row-gap: 2.5rem;
