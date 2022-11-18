@@ -791,6 +791,12 @@ body.light-theme
   margin-bottom: .25rem;
 }
 
+.codes
+{
+  text-align: center;
+  font-size: 11px;
+}
+
 .work__button
 {
   width: max-content;
@@ -803,7 +809,7 @@ body.light-theme
 
 .work__button:hover .work__icon
 {
-  transform: translateX(.25rem);
+  transform: translateX(-.25rem);
 }
 
 .work__icon{
