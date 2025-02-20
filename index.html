@@ -1,854 +1,503 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title> Mathew Philp - Portfolio</title>
+</head>
 
-        <!--=============== BOXICONS ===============-->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Mathew Philp</a>
 
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt-2'></i>
+                        </a>
+                    </li>
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
 
-        <title> Mathew Philp - Portfolio</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Mathew Philp</a>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
 
-                <div class="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class='bx bx-home-alt-2'></i>
-                            </a>
-                        </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt'></i>
+                        </a>
+                    </li>
 
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class='bx bx-user' ></i>
-                            </a>
-                        </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-chat'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class='bx bx-book' ></i>
-                            </a>
-                        </li>
+            <!-- Theme Change -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+        </nav>
 
-                        <li class="nav__item">
-                            <a href="#work" class="nav__link">
-                                <i class='bx bx-briefcase-alt' ></i>
-                            </a>
-                        </li>
+    </header>
 
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class='bx bx-chat' ></i>
-                            </a>
-                        </li>
-                    </ul>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Mathew Philp</h1>
+                    <h3 class="home__education">Computer Information Technology Student</h3>
+
+                    <div class="home__buttons">
+                        <a download="" href="assets/pdf/Resume_Mathew Philp.pdf" class="button button--ghost">
+                            Download Resume
+                        </a>
+                        <a href="#about" class="button">About me</a>
+                    </div>
                 </div>
 
-                <!-- Theme Change -->
-                <i class='bx bx-moon change-theme' id="theme-button" ></i>
-            </nav>
-            
-        </header>
-
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <!--=============== HOME ===============-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__data">
-                        <span class="home__greeting">Hello, I'm</span>
-                        <h1 class="home__name">Mathew Philp</h1>
-                        <h3 class="home__education">Computer Information Technology Student</h3>
-
-                        <div class="home__buttons">
-                            <a download="" href="assets/pdf/Resume_Mathew Philp.pdf" class="button button--ghost">
-                                Download Resume
-                            </a>
-                            <a href="#about" class="button">About me</a>
-                        </div>
-                    </div>
-
-                    <!-- <div class="home__handle">
-                        <img src="/assets/img/perfil.png" alt="" class="home__img">
-                    </div> -->
-
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/mathewphilp/" target="_blank" class="home__social-link">
-                            <i class='bx bxl-linkedin-square'></i>
-                        </a>
-                        <a href="https://github.com/MathewPhilp" target="_blank" class="home__social-link">
-                            <i class='bx bxl-github' ></i>
-                        </a>
-                        <a href="https://twitter.com/home" target="_blank" class="home__social-link">
-                            <i class='bx bxl-twitter' ></i>
-                        </a>
-                    </div>
-
-                    <a href="#about" class="home__scroll">
-                        <i class='bx bx-down-arrow-alt home__scroll-icon'></i>
-                        <span class="home__scroll-name">Scroll Down</span>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/mathewphilp/" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin-square'></i>
                     </a>
-
-                    
-
+                    <a href="https://github.com/MathewPhilp" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://twitter.com/home" target="_blank" class="home__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
                 </div>
-                <h3 class="home__mission">"To create innovative technology solutions that will improve the lives of people around the globe."</h3>
-                
-            </section>
-            
-            <!--=============== ABOUT ===============-->
-            <section class="about section" id="about">
-                <span class="section__subtitle">My Intro</span>
-                <h2 class="section__title">About Me</h2>
 
-                <div class ="about__container container grid">
-                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-down-arrow-alt home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
 
-                    <div class="about__data">
-                        <div class="about__info">
-                            <div class="about__box">
-                                <i class='bx bx-award about-icon' ></i>
-                                <h3 class="about__title">Experience</h3>
-                                <span class="about__subtitle">2+ Years</span>
+
+
+            </div>
+            <h3 class="home__mission">"To create innovative technology solutions that will improve the lives of people
+                around the globe."</h3>
+
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about-icon'></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">2+ Years</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt-2 about-icon'></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">10+ Projects.</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bx-map-alt about-icon'></i>
+                            <h3 class="about__title">Location</h3>
+                            <span class="about__subtitle">Alberta, Canada</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+
+                        <b>Hello, I'm Mathew. Nice to meet you.</b>
+                        <br>
+                        <br>
+                        Soon to be a graduate in Computer Information Technology with over two years of hands-on
+                        experience
+                        building and testing applications for Windows and Android.
+                        <br>
+                        <br>
+                        My education has allowed me to experience 7+ programming languages and refine my programming
+                        skills
+                        exceptionally with HTML, CSS, and PHP.
+                        <br>
+                        <br>
+                        I seek to use my experiences in opportunities that allow me to contribute, learn and grow. If
+                        you
+                        have an excellent opportunity matching my skills and experience, please don't hesitate to
+                        contact me.
+                    </p>
+
+                    <a href="#contact" class="button">Contact Me</a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My Abilities</span>
+            <h2 class="section__title">My Experience</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
                             </div>
 
-                            <div class="about__box">
-                                <i class='bx bx-briefcase-alt-2 about-icon'></i>
-                                <h3 class="about__title">Completed</h3>
-                                <span class="about__subtitle">10+ Projects.</span>
-                            </div>
-
-                            <div class="about__box">
-                                <i class='bx bx-map-alt about-icon' ></i>
-                                <h3 class="about__title">Location</h3>
-                                <span class="about__subtitle">Alberta, Canada</span>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
                             </div>
                         </div>
 
-                        <p class="about__description">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">basic</span>
+                                </div>
+                            </div>
 
-                            <b>Hello, I'm Mathew. Nice to meet you.</b>
-                            <br>
-                            <br>
-                            Soon to be a graduate in Computer Information Technology with over two years of hands-on experience
-                            building and testing applications for Windows and Android. 
-                            <br>
-                            <br>
-                            My education has allowed me to experience 7+ programming languages and refine my programming skills
-                            exceptionally with HTML, CSS, and PHP.
-                            <br>
-                            <br>
-                            I seek to use my experiences in opportunities that allow me to contribute, learn and grow. If you
-                            have an excellent opportunity matching my skills and experience, please don't hesitate to contact me.
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">GIT</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Backend Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">C#</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">C++</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__level">basic</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Work</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".web">Web</span>
+                <span class="work__item" data-filter=".game">Games</span>
+                <span class="work__item" data-filter=".bot">Bot's</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="assets/img/work1.jpg" alt="" class="work__img">
+                    <h3 class="work__title">318 Nutrition</h3>
+                    <a href="https://318nutrition.com/Documents/PHP/index.php" target="_blank" class="work__button">
+                        <i class='bx bx-window work__icon'></i>Live
+                    </a>
+                    <h3 class="codes">HTML | CSS | PHP | JS</h3>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/img/work10.jpg" alt="" class="work__img">
+                    <h3 class="work__title">Java Jam</h3>
+                    <a href="https://github.com/MathewPhilp/JavaJam" target="_blank" class="work__button">
+                        <i class='bx bxl-github work__icon'></i>Code
+                    </a>
+                    <h3 class="codes">HTML | CSS</h3>
+                </div>
+
+                <div class="work__card mix bot">
+                    <img src="assets/img/discord-new-logo.jpg" alt="" class="work__img">
+                    <h3 class="work__title">Discord Bot</h3>
+                    <a href="https://github.com/MathewPhilp/DiscordBotJS" target="_blank" class="work__button">
+                        <i class='bx bxl-github work__icon'></i>Code
+                    </a>
+                    <h3 class="codes">NodeJS | API's</h3>
+                </div>
+
+
+                <div class="work__card mix game">
+                    <img src="assets/img/itchio_logo.jpg" alt="" class="work__img">
+                    <h3 class="work__title">Itch.io | Collection</h3>
+                    <a href="https://m05final.itch.io/" target="_blank" class="work__button">
+                        <i class='bx bx-window work__icon'></i>Live
+                    </a>
+                    <h3 class="codes">Unreal Engine</h3>
+                </div>
+                <div class="work__card mix game">
+                    <img src="assets/img/curseforge-logo.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Curseforge | Mod Collection</h3>
+
+                    <a href="https://www.curseforge.com/members/m05final/projects" target="_blank" class="work__button">
+                        <i class='bx bx-window work__icon'></i>Live
+                    </a>
+                    <h3 class="codes">Curseforge | Lua</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial section" id="testimonial">
+            <span class="section__subtitle">My clients say</span>
+            <h2 class="section__title">Testimonial</h2>
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Chris Greer | <i class="testimonial__work">Select People
+                                Solutions</i></h3>
+                        <p class="testimonial__description">
+                            "With outstanding time management skills, he made sure to always deliver his work results in
+                            a timely fashion."
                         </p>
+                    </div>
 
-                        <a href="#contact" class="button">Contact Me</a>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Micheal Taban | <i class="testimonial__work">South Street
+                                Burgers</i></h3>
+                        <p class="testimonial__description">
+                            "Mathew is a great employee with outstanding team player qualities."
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Prak Dharamkar | <i class="testimonial__work">Tiger Electric</i>
+                        </h3>
+                        <p class="testimonial__description">
+                            "I know Mathew as a very clever employee with a lot of creative ideas and an open mind for
+                            suggestions and criticism."
+                        </p>
                     </div>
                 </div>
-
-                
-            </section>
-
-            <!--=============== SKILLS ===============-->
-            <section class="skills section" id="skills">
-                <span class="section__subtitle">My Abilities</span>
-                <h2 class="section__title">My Experience</h2>
-
-                <div class="skills__container container grid">
-                    <div class="skills__content">
-                        <h3 class="skills__title">Frontend Developer</h3>
-
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>   
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">React</h3>
-                                        <span class="skills__level">basic</span>
-                                    </div>  
-                                </div>
-
-                                <!-- <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">GIT</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">React</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skills__content">
-                        <h3 class="skills__title">Backend Developer</h3>
-
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">C#</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">C++</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">MySQL</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">PHP</h3>
-                                        <span class="skills__level">basic</span>
-                                    </div>    
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">Java</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">Python</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-
-                
-            </section>
-
-            <!-- =============== SERVICES ===============
-            <section class="services section">
-                <span class="section__subtitle">My Services</span>
-                <h2 class="section__title">What i offer</h2>
-
-                <div class="skills__container container grid">
-                    <div class="skills__content">
-                        <br>
-                        <br>
-                       
-
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">Time Management</h3>
-                                    </div>   
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">Communication</h3>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">Adaptability</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__group"> -->
-                                <!-- <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">React</h3>
-                                        <span class="skills__level">bassic</span>
-                                    </div>  
-                                </div> -->
-
-                                <!-- <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">GIT</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">React</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div> -->
-                            <!-- </div>
-                        </div>
-                    </div>
-
-                    <div class="skills__content">
-                        <h3 class="skills__title">Backend Developer</h3>
-
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">C#</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">C++</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">MySQL</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">PHP</h3>
-                                        <span class="skills__level">basic</span>
-                                    </div>    
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">Java</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">Python</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div> -->
-
-                <!-- <div class="services__container container grid">
-                    <div class="services__card">
-                        <h3 class="services__title">Product <br> Designer</h3>
-
-                        <span class="services__button">
-                            See more <i class='bx bx-right-arrow services__icon' ></i>
-                        </span>
-
-                        <div class="services__model">
-                            <div class="services__model-content">
-                                <i class='bx bx-x services__model-exit' ></i>
-
-                                <h3 class="services__model-title">Product Designer</h3>
-                                <p class="services__model-description">qweqweqweqweqweqwwq</p>
-
-                                <ul class="services__model-list">
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test
-                                        </p>
-                                    </li>
-
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test
-                                        </p>
-                                    </li>
-
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test 
-                                        </p>
-                                    </li>
-
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test 
-                                        </p>
-                                    </li>
-
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test 
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="services__card">
-                        <h3 class="services__title">Ui/Ux <br> Designer</h3>
-
-                        <span class="services__button">
-                            See more <i class='bx bx-right-arrow services__icon' ></i>
-                        </span>
-
-                        <div class="services__model">
-                            <div class="services__model-content">
-                                <i class='bx bx-x services__model-exit' ></i>
-
-                                <h3 class="services__model-title">Ui/Ux Designer</h3>
-                                <p class="services__model-description">qweqweqweqweqweqwwq</p>
-
-                                <ul class="services__model-list">
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test
-                                        </p>
-                                    </li>
-
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test
-                                        </p>
-                                    </li>
-
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test 
-                                        </p>
-                                    </li>
-
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test 
-                                        </p>
-                                    </li>
-
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test 
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="services__card">
-                        <h3 class="services__title">Visual <br> Designer</h3>
-
-                        <span class="services__button">
-                            See more <i class='bx bx-right-arrow services__icon' ></i>
-                        </span>
-
-                        <div class="services__model">
-                            <div class="services__model-content">
-                                <i class='bx bx-x services__model-exit' ></i>
-
-                                <h3 class="services__model-title">Visual Designer</h3>
-                                <p class="services__model-description">qweqweqweqweqweqwwq</p>
-
-                                <ul class="services__model-list">
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test test test test test test test test test 
-                                        </p>
-                                    </li>
-
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test test test test test test test test test
-                                        </p>
-                                    </li>
-
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test test test test test test test test test 
-                                        </p>
-                                    </li>
-
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test test test test test test test test test 
-                                        </p>
-                                    </li>
-
-                                    <li class="services__model-items">
-                                        <i class='bx bx-code services__model-icon' ></i>
-                                        <p class="services__model-info">
-                                            test test test test test test test test test 
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                
-            </section>
-
-            <!--=============== WORK ===============-->
-            <section class="work section" id="work">
-                <span class="section__subtitle">My Portfolio</span>
-                <h2 class="section__title">Recent Work</h2>
-
-                <div class="work__filters">
-                    <span class="work__item active-work" data-filter="all">All</span>
-                    <span class="work__item" data-filter=".web">Web</span>
-                    <span class="work__item" data-filter=".mobile">Mobile</span>
-                    <span class="work__item" data-filter=".bot">Bot's</span>
-                </div>
-
-                <div class="work__container container grid">
-
-                    <div class="work__card mix web">
-                        <img src="assets/img/work1.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">318 Nutrition</h3>
-
-                        <a href="https://318nutrition.com/Documents/PHP/index.php" target="_blank" class="work__button">
-                            <i class='bx bx-window work__icon'></i>Live  
-                        </a>
-
-                        <!-- <a href="" class="work__button">
-                            <i class='bx bxl-github work__icon'></i>Code  
-                        </a> -->
-                        
-                        <h3 class="codes">HTML | CSS | PHP | JS</h3>
-                    </div>
-
-                    <div class="work__card mix web">
-                        <img src="assets/img/work10.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Java Jam</h3>
-
-                        <!-- <a href="https://318nutrition.com/Documents/PHP/index.php" target="_blank" class="work__button">
-                            <i class='bx bx-window work__icon'></i>Live  
-                        </a> -->
-                        
-
-                        <a href="https://github.com/MathewPhilp/JavaJam" target="_blank" class="work__button">
-                            <i class='bx bxl-github work__icon'></i>Code  
-                        </a>
-                        <h3 class="codes">HTML | CSS</h3>
-                    </div>
-
-
-                    <div class="work__card mix bot">
-                        <img src="assets/img/DiscordBotLogo.png" alt="" class="work__img">
-
-                        <h3 class="work__title">Discord Bot</h3>
-
-                        <a href="https://github.com/MathewPhilp/DiscordBotJS" target="_blank" class="work__button">
-                            <i class='bx bxl-github work__icon'></i>Code  
-                        </a>
-
-                        <!-- <a href="" class="work__button">
-                            <i class='bx bxl-github work__icon'></i>Code  
-                        </a> -->
-                        
-                        <h3 class="codes">NodeJS | API's</h3>
-                    </div>
-                        
-
-
-                    <!-- <div class="work__card mix mobile">
-                        <img src="assets/img/work2.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Mobile Apps</h3>
-
-                        <a href="" class="work__button">
-                            demo <i class='bx bx-right-arrow work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix design">
-                        <img src="assets/img/work3.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Brand Design</h3>
-
-                        <a href="" class="work__button">
-                            demo <i class='bx bx-right-arrow work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix web">
-                        <img src="assets/img/work4.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Web Design</h3>
-
-                        <a href="" class="work__button">
-                            demo <i class='bx bx-right-arrow work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix mobile">
-                        <img src="assets/img/work5.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">App Mobile</h3>
-
-                        <a href="" class="work__button">
-                            demo <i class='bx bx-right-arrow work__icon'></i>
-                        </a>
-                    </div> -->
-                </div>
-                
-            </section>
-
-            <!--=============== TESTIMONIALS ===============-->
-            <section class="testimonial section" id="testimonial">
-                <span class="section__subtitle">My clients say</span>
-                <h2 class="section__title">Testimonial</h2>
-
-                <div class="testimonial__container container swiper">
-                    <div class="swiper-wrapper">
-                        <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
-
-                            <h3 class="testimonial__name">Chris Greer | <i class ="testimonial__work">Select People Solutions</i></h3>
-                            <p class="testimonial__description">
-                                "With outstanding time management skills, he made sure to always deliver his work results in a timely fashion."
-                            </p>
-                        </div>
-
-                        <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
-
-                            <h3 class="testimonial__name">Micheal Taban | <i class ="testimonial__work">South Street Burgers</i></h3>
-                            <p class="testimonial__description">
-                                "Mathew is a great employee with outstanding team player qualities."
-                            </p>
-                        </div>
-
-                        <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
-
-                            <h3 class="testimonial__name">Prak Dharamkar  | <i class ="testimonial__work">Tiger Electric</i></h3>
-                            <p class="testimonial__description">
-                                "I know Mathew as a very clever employee with a lot of creative ideas and an open mind for suggestions and criticism."
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-pagination"></div>
-                </div>
-                
-            </section>
-
-            <!--=============== CONTACT ===============-->
-            <section class="contact section" id="contact">
-                <span class="section__subtitle">Get in Touch</span>
-                <h2 class="section__title">Contact Me</h2>
-
-                <div class="contact__container container grid">
-
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in Touch</span>
+            <h2 class="section__title">Contact Me</h2>
+            <div class="contact__container container grid">
                 <div class="contact__content">
                     <h3 class="contact__title">Lets talk</h3>
-
                     <div class="contact__info">
                         <div class="contact__card">
                             <i class='bx bxl-gmail contact__card-icon'></i>
                             <h3 class="contact__card-title">Email</h3>
-                            <span class="contact__card-data">contact@mathewphilp.ca</span>
-
-                            <a href="mailto:contact@mathewphilp.ca" target="_blank"class="contact__button">
-                                Email me <i class='bx bx-right-arrow contact__button-icon' ></i>
+                            <span class="contact__card-data">mathew.h.philp@gmail.com</span>
+                            <a href="mailto:mathew.h.philp@gmail.com" target="_blank" class="contact__button">
+                                Email me <i class='bx bx-right-arrow contact__button-icon'></i>
                             </a>
                         </div>
-
                         <div class="contact__card">
                             <i class='bx bx-phone contact__card-icon'></i>
                             <h3 class="contact__card-title">Phone</h3>
                             <span class="contact__card-data">+1(780) 719-0095</span>
 
-                            <a href="tel:+17807190095" target="_blank"class="contact__button">
-                                Phone me <i class='bx bx-right-arrow contact__button-icon' ></i>
+                            <a href="tel:+17807190095" target="_blank" class="contact__button">
+                                Phone me <i class='bx bx-right-arrow contact__button-icon'></i>
                             </a>
                         </div>
-
                         <div class="contact__card">
                             <i class='bx bxl-linkedin-square contact__card-icon'></i>
                             <h3 class="contact__card-title">Linkedin</h3>
                             <span class="contact__card-data">/in/mathewphilp</span>
-
-                            <a href="https://www.linkedin.com/in/mathewphilp/" target="_blank"class="contact__button">
-                                Connect with me <i class='bx bx-right-arrow contact__button-icon' ></i>
+                            <a href="https://www.linkedin.com/in/mathewphilp/" target="_blank" class="contact__button">
+                                Connect with me <i class='bx bx-right-arrow contact__button-icon'></i>
                             </a>
                         </div>
                     </div>
-                    
                 </div>
-
-                
-                    <div class="contact__content">
-                        <h3 class="contact__title">Send Email</h3>
-
-                        <form action="mailto:contact@mathewphilp.ca" method="GET" class="contact__form">
-                            <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Name</label>
-                                <input type="text" placeholder="Insert your name" class="contact__form-input">
-                            </div>
-
-                            <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Email</label>
-                                <input type="email" placeholder="Insert your email" class="contact__form-input">
-                            </div>
-
-                            <div class="contact__form-div contact__form-area">
-                                <label for="" class="contact__form-tag">Message</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Insert your Message" class="contact__form-input"></textarea>
-                            </div>
-
-                            <button class="button" type="submit" value="Send">Send Message</button>
-                        </form>
-
-                    </div>
+                <div class="contact__content">
+                    <h3 class="contact__title">Send Email</h3>
+                    <form action="mailto:mathew.h.philp@gmail.com" method="GET" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <input type="text" placeholder="Insert your name" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Email</label>
+                            <input type="email" placeholder="Insert your email" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Message</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Insert your Message"
+                                class="contact__form-input"></textarea>
+                        </div>
+                        <button class="button" type="submit" value="Send">Send Message</button>
+                    </form>
                 </div>
-                
-            </section>
-        </main>
-
-        <!--=============== FOOTER ===============-->
-        <footer class="footer">
-            <div class="footer__container container">
-                <h1 class="footer__title">Mathew Philp</h1>
-
-                <ul class="footer__list">
-                    <li>
-                        <a href="#about" class="footer__link">About</a>
-                    </li>
-
-                    <li>
-                        <a href="#work" class="footer__link">Projects</a>
-                    </li>
-
-                    <li>
-                        <a href="#testimonial" class="footer__link">Testimonial</a>
-                    </li>
-                </ul>
-
-                <ul class="footer__social">
-                    <a href="" targer="_blank" class="footer__social-link">
-                        <i class='bx bxl-linkedin-square'></i>
-                    </a>
-
-                    <a href="" targer="_blank" class="footer__social-link">
-                        <i class='bx bxl-github' ></i>
-                    </a>
-
-                    <a href="https://twitter.com/home" targer="_blank" class="footer__social-link">
-                        <i class='bx bxl-twitter'></i>
-                    </a>
-                </ul>
-
-                <span class="footer__copy">&#169 Mathew Philp 2022</span>
             </div>
-        </footer>
+        </section>
+    </main>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Mathew Philp</h1>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
 
-        <!--=============== MIXITUP FILTER ===============-->
-        <script src="assets/js/mixitup.min.js"></script>
+                <li>
+                    <a href="#work" class="footer__link">Projects</a>
+                </li>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                <li>
+                    <a href="#testimonial" class="footer__link">Testimonial</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="" targer="_blank" class="footer__social-link">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+
+                <a href="" targer="_blank" class="footer__social-link">
+                    <i class='bx bxl-github'></i>
+                </a>
+
+                <a href="https://twitter.com/home" targer="_blank" class="footer__social-link">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy">&#169 Mathew Philp 2024</span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
